@@ -1,0 +1,1183 @@
+10:05:24  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+10:05:24  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+10:05:24  INFO 17132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:05:24  INFO 17132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:05:25  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+10:05:25  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+10:05:25  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+10:05:25  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+10:05:25  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+10:05:25  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+10:05:25  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+10:05:26  INFO 17132 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+10:05:26  INFO 17132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+10:05:26  INFO 17132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+10:05:27  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+10:05:27  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Started ForumSpringBoot27Application in 3.423 seconds (JVM running for 4.91)
+10:05:29  INFO 17132 --- [RMI TCP Connection(3)-192.168.182.162] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:05:29  INFO 17132 --- [RMI TCP Connection(3)-192.168.182.162] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+10:05:29  INFO 17132 --- [RMI TCP Connection(3)-192.168.182.162] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+10:05:49  INFO 17132 --- [http-nio-8080-exec-1] c.e.f.service.impl.UserServiceImpl       : 登录成功：username= admin
+10:05:49  INFO 17132 --- [http-nio-8080-exec-8] c.e.f.controller.BoardController         : 首页板块个数为: 9
+10:17:20  INFO 17132 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 3 deletions, 2 modifications)
+10:17:21  INFO 17132 --- [Thread-9] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+10:17:21  INFO 17132 --- [Thread-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+10:17:21  WARN 17132 --- [Thread-9] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Create-1517964941] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2885)
+10:17:21  WARN 17132 --- [Thread-9] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Destroy-1517964941] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.druid.pool.DruidDataSource$DestroyConnectionThread.run(DruidDataSource.java:2984)
+10:17:21  INFO 17132 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+10:17:21  INFO 17132 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+10:17:21  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+10:17:21  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+10:17:22  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+10:17:22  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+10:17:22  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+10:17:22  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+10:17:22  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 375 ms
+10:17:22  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+10:17:22  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+10:17:22  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@39f3ba23]
+10:17:22  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+10:17:22  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+10:17:22  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+10:17:22  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+10:17:22 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@39f3ba23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@39f3ba23]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+10:17:25  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+10:17:25  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+10:17:26  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+10:17:26  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+10:17:26  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+10:17:26  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+10:17:26  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+10:17:26  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+10:17:26  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+10:17:26  INFO 17132 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+10:17:26  INFO 17132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+10:17:26  INFO 17132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+10:17:26  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+10:17:27  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Started ForumSpringBoot27Application in 1.347 seconds (JVM running for 724.574)
+10:17:27  INFO 17132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+11:35:34  INFO 17132 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+11:35:35  INFO 17132 --- [Thread-21] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+11:35:35  WARN 17132 --- [Thread-21] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Create-1655255900] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2885)
+11:35:35  WARN 17132 --- [Thread-21] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Destroy-1655255900] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.druid.pool.DruidDataSource$DestroyConnectionThread.run(DruidDataSource.java:2984)
+11:35:35  INFO 17132 --- [Thread-21] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+11:35:35  INFO 17132 --- [Thread-21] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+11:35:36  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+11:35:36  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+11:35:36  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+11:35:36  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:35:36  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+11:35:36  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+11:35:36  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 422 ms
+11:35:36  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+11:35:36  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+11:35:36  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@49964dde]
+11:35:36  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closing ...
+11:35:36  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+11:35:36  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+11:35:36  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:35:36 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@49964dde]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@49964dde]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+11:35:38  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+11:35:38  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+11:35:39  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+11:35:39  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:35:39  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+11:35:39  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+11:35:39  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 345 ms
+11:35:39  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+11:35:39  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+11:35:39  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3ed6381c]
+11:35:39  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closing ...
+11:35:39  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+11:35:39  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+11:35:39  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:35:39 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3ed6381c]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3ed6381c]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+15:00:27  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+15:00:27  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+15:00:28  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+15:00:28  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:00:28  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+15:00:28  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+15:00:28  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1017 ms
+15:00:28  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+15:00:28  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+15:00:28  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@44991594]
+15:00:28  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closing ...
+15:00:28  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+15:00:28  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+15:00:28  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:00:28 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@44991594]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@44991594]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+15:00:31  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+15:00:31  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+15:00:32  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+15:00:32  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:00:32  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+15:00:32  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+15:00:32  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+15:00:32  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+15:00:32  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+15:00:32  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@184eac23]
+15:00:32  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closing ...
+15:00:32  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+15:00:32  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+15:00:32  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:00:32 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@184eac23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@184eac23]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+15:12:28  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+15:12:28  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+15:12:29  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+15:12:29  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:12:29  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+15:12:29  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+15:12:29  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 397 ms
+15:12:29  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+15:12:29  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+15:12:29  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@57d76f1b]
+15:12:29  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closing ...
+15:12:29  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
+15:12:29  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+15:12:29  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:12:29 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@57d76f1b]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@57d76f1b]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+15:12:33  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+15:12:33  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+15:12:34  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+15:12:34  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:12:34  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+15:12:34  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+15:12:34  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 684 ms
+15:12:34  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+15:12:34  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} inited
+15:12:34  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1b7eb5d9]
+15:12:34  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closing ...
+15:12:34  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
+15:12:34  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+15:12:34  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:12:34 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1b7eb5d9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1b7eb5d9]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+16:07:47  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+16:07:47  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+16:07:48  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+16:07:48  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:07:48  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+16:07:48  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+16:07:48  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 489 ms
+16:07:48  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+16:07:48  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} inited
+16:07:48  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c59ef8b]
+16:07:48  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closing ...
+16:07:48  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
+16:07:48  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+16:07:48  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:07:48 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c59ef8b]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c59ef8b]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+16:07:52  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+16:07:52  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+16:07:52  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+16:07:52  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:07:52  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+16:07:52  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-8].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+16:07:52  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 366 ms
+16:07:52  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+16:07:52  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} inited
+16:07:52  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@18810f4c]
+16:07:52  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closing ...
+16:07:52  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closed
+16:07:52  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+16:07:52  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:07:52 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@18810f4c]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@18810f4c]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+16:07:55  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+16:07:55  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+16:07:56  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+16:07:56  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:07:56  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+16:07:56  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-9].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+16:07:56  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 329 ms
+16:07:56  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+16:07:56  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} inited
+16:07:56  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@116ec692]
+16:07:56  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closing ...
+16:07:56  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closed
+16:07:56  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+16:07:56  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:07:56 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@116ec692]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@116ec692]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+16:07:59  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+16:07:59  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+16:08:00  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+16:08:00  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:08:00  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+16:08:00  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-10].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+16:08:00  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 299 ms
+16:08:00  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+16:08:00  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} inited
+16:08:00  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@8516be1]
+16:08:00  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closing ...
+16:08:00  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closed
+16:08:00  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+16:08:00  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:08:00 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@8516be1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@8516be1]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+17:46:47  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+17:46:47  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+17:46:47  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+17:46:47  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:46:47  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+17:46:47  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-11].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+17:46:47  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 424 ms
+17:46:47  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+17:46:48  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} inited
+17:46:48  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6a3148a1]
+17:46:48  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} closing ...
+17:46:48  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} closed
+17:46:48  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+17:46:48  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+17:46:48 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6a3148a1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6a3148a1]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+17:46:51  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+17:46:51  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+17:46:52  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+17:46:52  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:46:52  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+17:46:52  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-12].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+17:46:52  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 329 ms
+17:46:52  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+17:46:52  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} inited
+17:46:52  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@70353478]
+17:46:52  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} closing ...
+17:46:52  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} closed
+17:46:52  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+17:46:52  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+17:46:52 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@70353478]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@70353478]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+17:56:31  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+17:56:31  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+17:56:31  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+17:56:31  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:56:31  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+17:56:31  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-13].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+17:56:31  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 614 ms
+17:56:31  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+17:56:31  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} inited
+17:56:31  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@41dadf36]
+17:56:31  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} closing ...
+17:56:31  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} closed
+17:56:31  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+17:56:32  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+17:56:32 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@41dadf36]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@41dadf36]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+17:56:37  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+17:56:37  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+17:56:37  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+17:56:37  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:56:37  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+17:56:37  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-14].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+17:56:37  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 629 ms
+17:56:37  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+17:56:37  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17} inited
+17:56:37  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5fc682e9]
+17:56:37  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17} closing ...
+17:56:37  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17} closed
+17:56:37  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+17:56:37  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+17:56:37 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5fc682e9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5fc682e9]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+18:00:00  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+18:00:00  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+18:00:02  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+18:00:02  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:00:02  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+18:00:02  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-15].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+18:00:02  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1698 ms
+18:00:02  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+18:00:02  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-18} inited
+18:00:02  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@775a9460]
+18:00:02  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-18} closing ...
+18:00:02  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-18} closed
+18:00:02  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:00:02  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:00:02 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@775a9460]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@775a9460]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+
+18:00:10  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : Starting ForumSpringBoot27Application using Java 1.8.0_192 on niceff的pc with PID 17132 (C:\java\SpringBoot\forumSpringBoot27\target\classes started by L in C:\java\SpringBoot\forumSpringBoot27)
+18:00:10  INFO 17132 --- [restartedMain] c.e.f.ForumSpringBoot27Application       : No active profile set, falling back to 1 default profile: "default"
+18:00:11  INFO 17132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+18:00:11  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:00:11  INFO 17132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+18:00:11  INFO 17132 --- [restartedMain] o.a.c.c.C.[Tomcat-16].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+18:00:11  INFO 17132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 838 ms
+18:00:11  INFO 17132 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+18:00:11  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-19} inited
+18:00:11  WARN 17132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1c1a2d29]
+18:00:11  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-19} closing ...
+18:00:11  INFO 17132 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-19} closed
+18:00:11  INFO 17132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:00:11  INFO 17132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:00:11 ERROR 17132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myLikeController' defined in file [C:\java\SpringBoot\forumSpringBoot27\target\classes\com\example\forumspringboot27\controller\MyLikeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1c1a2d29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.example.forumspringboot27.ForumSpringBoot27Application.main(ForumSpringBoot27Application.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.forumspringboot27.controller.MyLikeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1c1a2d29]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/forumspringboot27/service/impl/MyLikeService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_192]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_192]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.24.jar:5.3.24]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.forumspringboot27.service.impl.MyLikeService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_192]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_192]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_192]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_192]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.6.jar:2.7.6]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_192]
+	... 30 common frames omitted
+

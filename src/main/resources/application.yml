@@ -1,0 +1,43 @@
+# application.yml
+# Spring 全局配置
+spring:
+  application:
+    name: FF论坛 # 项⽬名
+  output:
+    ansi:
+      enabled: ALWAYS # 控制台输出彩⾊⽇志
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/forum_db?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver # 数据库连接驱动
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER #Springfox-Swagger兼容性配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss # 日期格式
+    default-property-inclusion: non_null
+    time-zone: "GMT+8"
+# 服务器配置
+server:
+  port: 8080 # 指定端⼝号
+
+# ⽇志配置
+logging:
+  pattern:
+    dateformat: HH:mm:ss
+  level:
+    root: info # 默认⽇志级别
+#    com.example.forumspringboot27: debug # 指定包的⽇志级别
+  file:
+    path: log/forum #生产环境的目录
+  #    path: C:\log
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+
+public:
+  login:
+    url: sign-in.html
+  index:
+    board-num: 9

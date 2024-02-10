@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="Pagetitle"></title>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/jquery.toast.css">
+    
+    <link rel="stylesheet" href="dist/editor.md-master/css/editormd.min.css">
+<script src="dist/editor.md-master/editormd.js"></script>
+    <script src="dist/editor.md-master/lib/prettify.min.js"></script>
+    <script src="dist/editor.md-master/lib/marked.min.js"></script>
+
+</head>
+<body>
+    <h2 id="titleNav"></h2>
+    <hr>
+    <div id="fontInfo">
+        <span id="createTime">创作日期:</span> &nbsp;&nbsp; <span id="updateTime">修改如期:</span> &nbsp;&nbsp;>>
+        <a href="javascript:void(0);" 
+        style="font-size: 1.5em; font-style: italic; color: blue; border-width: 1px; border-radius: 2px; margin-left: 20px;" 
+        id="reState">点击此处恢复文章</a>
+        <br>
+        <span id="visitCount">浏览数:</span>&nbsp;&nbsp; <span id="likeCount">点赞数:</span>
+        <br>
+    </div>
+    <hr>
+
+    <div id="contentDiv">
+
+    </div>
+    <style>
+        #fontInfo {
+            font-size: 1.5em;
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</body>
+
+<script>
+
+    /*  获取URl中的参数
+    * @para url 
+    * @para key 参数名*/
+
+    function init() {
+        jQuery.ajax({
+            url: 'article/getBinArticleDetail',
+            type: 'get',
+            data: {
+                aid: new URLSearchParams(location.search).get('aid')
+            },
+            success: function (ret) {
+                if (ret.code == 0) {
+                    jQuery("#Pagetitle").html(ret.data.title);
+
+                    jQuery("#titleNav").html(ret.data.title);
+                    jQuery("#createTime").append(ret.data.createtime);
+                    jQuery("#updateTime").append(ret.data.updatetime);
+                    jQuery("#visitCount").append(ret.data.visitcount);
+                    jQuery("#likeCount").append(ret.data.likecount);
+                    editormd.markdownToHTML('contentDiv', { markdown: ret.data.content });
+
+                } else {
+                    // 失败 
+                    alert(ret.message);
+                }
+            },
+            error: function () {
+                alert('未知错误');
+            }
+        });
+    }
+    init();
+
+    jQuery("#reState").click(function() {
+        jQuery.ajax({
+            url : 'article/restate',
+            type : 'get',
+            data: {
+                aid: new URLSearchParams(location.search).get('aid')
+            },
+            success: function (ret) {
+                if (ret.code == 0) {
+                    location.href = './index.html';
+                } else {
+                    // 失败 
+                    alert(ret.message);
+                }
+            },
+            error: function () {
+                alert('未知错误');
+            }
+        });
+    })
+</script>
+
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.forumspringboot27.dao.MyLikeMapper">
+
+    <!--    从数据库中读取当前登录用户的点赞列表-->
+    <select id="getMyLikeByUid" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select <include refid="Base_Column_List"></include> from t_mylike where uid = #{uid}
+    </select>
+
+    <insert id="inserMyLike" parameterType="java.lang.Long">
+        insert into t_mylike values(#{uid},#{aid});
+    </insert>
+
+    <delete id="deleteByAidAndUid">
+        delete from t_mylike where uid = #{uid} and aid = #{aid};
+    </delete>
+
+</mapper>

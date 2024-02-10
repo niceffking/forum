@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.forumspringboot27.dao.MyLikeMapper">
+    <resultMap id="BaseResultMap" type="com.example.forumspringboot27.model.MyLike">
+        <result column="uid" jdbcType="BIGINT" property="uid" />
+        <result column="aid" jdbcType="BIGINT" property="aid" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        uid, aid
+    </sql>
+</mapper>

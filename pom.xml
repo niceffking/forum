@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>forumSpringBoot27</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>forumSpringBoot27</name>
+    <description>forumSpringBoot27</description>
+    <properties>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring-boot.version>2.7.6</spring-boot.version>
+
+        <java.version>1.8</java.version>
+        <!-- 编译环境JDK版本 -->
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <!-- 运⾏环境JVM版本 -->
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <!-- 构建项⽬指定编码集 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 数据库连接-->
+        <mysql-connector.version>5.1.49</mysql-connector.version>
+        <!-- mybatis -->
+        <mybatis-starter>2.3.0</mybatis-starter>
+        <!-- 数据源 -->
+        <druid-starter>1.2.15</druid-starter>
+        <!-- mybatis ⽣成器 -->
+        <mybatis-generator-plugin-version>1.4.1</mybatis-generator-plugin-version>
+                <!-- API测试接⼝⽣成 -->
+        <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
+
+        <mysql-connector.version>5.1.49</mysql-connector.version>
+        <mybatis-starter.version>2.3.0</mybatis-starter.version>
+        <druid-starter.version>1.2.16</druid-starter.version>
+
+        <mybatis-generator-plugin-version>1.4.1</mybatis-generator-plugin-version>
+    </properties>
+    <packaging>jar</packaging>
+    <dependencies>
+<!--        文件上传, commons - fileupload 依赖-->
+        <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.4</version>
+        </dependency>
+<!--        commons-io 依赖-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <!--        md5 加密-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+<!--        -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector.version}</version>
+        </dependency>
+        <!-- mybatis 依赖
+         其中已经包含了spring-jdbc不再重复引⽤,
+         此项⽬中使⽤spring-jdbc提供的HikariCP做为数据源, 相关配置在yml⽂件中
+        -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis-starter.version}</version>
+        </dependency>
+        <!-- 阿⾥巴巴druid数据源，如果使⽤SpringBoot默认的数据源，删除或注释这个依赖即可 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid-starter.version}</version>
+        </dependency>
+
+
+        <!-- API⽂档⽣成，基于swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${springfox-boot-starter.version}</version>
+        </dependency>
+        <!-- SpringBoot健康监控 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>${mybatis-generator-plugin-version}</version>
+                <executions>
+                    <execution>
+                        <id>Generate MyBatis Artifacts</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <!-- 相关配置 -->
+                <configuration>
+                    <!-- 打开⽇志 -->
+                    <verbose>true</verbose>
+                    <!-- 允许覆盖 -->
+                    <overwrite>true</overwrite>
+                    <!-- 配置⽂件路径 -->
+                    <configurationFile>
+                        src/main/resources/mybatis/generatorConfig.xml
+                    </configurationFile>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <configuration>
+                    <mainClass>com.example.forumspringboot27.ForumSpringBoot27Application</mainClass>
+<!--                    <skip>true</skip>-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>repackage</id>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

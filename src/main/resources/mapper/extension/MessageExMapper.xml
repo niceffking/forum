@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.forumspringboot27.dao.MessageMapper">
+    <resultMap id="AllInfoOfMessage" type="com.example.forumspringboot27.model.Message" extends="BaseResultMap">
+<!-- 关联对象-->
+        <association property="postuser" resultMap="com.example.forumspringboot27.dao.UserMapper.BaseResultMap" columnPrefix="u_"></association>
+    </resultMap>
+
+<!-- 查询未读消息的数量-->
+    <select id="selectUnreadCount" resultType="java.lang.Integer" parameterType="java.lang.Long">
+        select count(*) from t_message where state = 0 and deletestate = 0 and receiveuserid = #{rid};
+    </select>
+
+<!-- 查询未读消息列表的各项数据-->
+    <select id="selectMessageList" resultMap="AllInfoOfMessage" parameterType="java.lang.Long">
+        select
+            u.id as u_id,
+            u.avatarUrl as u_avatarUrl,
+            u.nickname as u_nickname,
+            u.gender as u_gender,
+            m.id,
+            m.postuserid,
+            m.receiveuserid,
+            m.content,
+            m.state,
+            m.deletestate,
+            m.createtime,
+            m.updatetime
+        from t_message m, t_user u
+        where m.postuserid = u.id
+          and m.deletestate = 0
+          and m.receiveuserid = #{rid}
+        order by m.createtime desc, m.state asc;
+    </select>
+</mapper>

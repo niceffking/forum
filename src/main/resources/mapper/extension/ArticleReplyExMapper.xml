@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.forumspringboot27.dao.ArticleReplyMapper">
+    <resultMap id="AllInfoResultMap" type="com.example.forumspringboot27.model.ArticleReply" extends="BaseResultMap">
+<!--        关联用户映射-->
+        <association property="user" resultMap="com.example.forumspringboot27.dao.UserMapper.BaseResultMap" columnPrefix="u_">
+
+        </association>
+    </resultMap>
+    
+    <select id="selectReplyByArticleId" resultMap="AllInfoResultMap" parameterType="java.lang.Long">
+        select
+            u.id as u_id,
+            u.avatarUrl as u_avatarUrl,
+            u.nickname as u_nickname,
+            ar.id,
+            ar.articleid,
+            ar.postuserid,
+            ar.replyid,
+            ar.replyuserid,
+            ar.content,
+            ar.likecount,
+            ar.state,
+            ar.deletestate,
+            ar.createtime,
+            ar.updatetime
+        from t_article_reply ar, t_user u
+        where ar.postuserid = u.id
+          and ar.articleid = #{aid}
+          and ar.deletestate = 0
+        order by ar.createtime desc
+    </select>
+</mapper>

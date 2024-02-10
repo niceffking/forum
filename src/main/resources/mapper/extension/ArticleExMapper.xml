@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.forumspringboot27.dao.ArticleMapper">
+<!--    自定义结果集,用于下面的查询映射-->
+    <resultMap id="AllinfoResultMap" type="com.example.forumspringboot27.model.Article" extends="ResultMapWithBLOBs">
+        <association property="user" resultMap="com.example.forumspringboot27.dao.UserMapper.BaseResultMap"
+        columnPrefix="u_">
+        </association>
+
+<!--        关联板块的map-->
+        <association property="board" resultMap="com.example.forumspringboot27.dao.BoardMapper.BaseResultMap" columnPrefix="b_">
+
+        </association>
+    </resultMap>
+<!--    查询所有的未被删除的帖子的列表 -->
+    <select id="selectAll" resultMap="AllinfoResultMap">
+-- 定义一个自定义的resultMap
+        select u.id as u_id,
+               u.avatarUrl as u_avatarUrl,
+               u.nickname as u_nickname,
+               a.id,
+               a.boardid,
+               a.userid,
+               a.title,
+               a.visitcount,
+               a.replycount,
+               a.likecount,
+               a.state,
+               a.createtime,
+               a.updatetime
+        from t_article a, t_user u
+        where a.userid = u.id and a.deletestate = 0
+        order by a.createtime desc;
+    </select>
+
+<!--    根据板块id查询所有未被删除的帖子-->
+    <select id="selectAllById" resultMap="AllinfoResultMap" parameterType="java.lang.Long">
+        -- 定义一个自定义的resultMap
+        select u.id as u_id,
+               u.avatarUrl as u_avatarUrl,
+               u.nickname as u_nickname,
+               a.id,
+               a.boardid,
+               a.userid,
+               a.title,
+               a.visitcount,
+               a.replycount,
+               a.likecount,
+               a.state,
+               a.createtime,
+               a.updatetime
+        from t_article a, t_user u
+        where a.userid = u.id and a.deletestate = 0 and a.boardid = #{bId}
+        order by a.createtime desc;
+    </select>
+    
+    <select id="selectDetailById" resultMap="AllinfoResultMap">
+        select u.id as u_id,
+               u.avatarUrl as u_avatarUrl,
+               u.nickname as u_nickname,
+               u.gender as u_gender,
+               u.isadmin as u_isadmin,
+               u.state as u_state,
+               u.deletestate as u_deletestate,
+               b.name as b_name,
+               b.state as b_state,
+               b.deletestate as b_deletestate,
+               a.id,
+               a.boardid,
+               a.userid,
+               a.title,
+               a.content,
+               a.visitcount,
+               a.replycount,
+               a.likecount,
+               a.state,
+               a.createtime,
+               a.updatetime
+        from t_article a, t_user u, t_board b
+        where
+            a.userid = u.id
+          and a.deletestate = 0
+          and a.boardid = b.id
+        and a.id = #{aid}
+    </select>
+
+<!--    查询所有的帖子信息,而且需要绑定其用户和板块-->
+    <select id="selectDetailAll" resultMap="AllinfoResultMap">
+        select u.id as u_id,
+               u.avatarUrl as u_avatarUrl,
+               u.nickname as u_nickname,
+               u.gender as u_gender,
+               u.isadmin as u_isadmin,
+               u.state as u_state,
+               u.deletestate as u_deletestate,
+               b.name as b_name,
+               b.state as b_state,
+               b.deletestate as b_deletestate,
+               a.id,
+               a.boardid,
+               a.userid,
+               a.title,
+               a.content,
+               a.visitcount,
+               a.replycount,
+               a.likecount,
+               a.state,
+               a.createtime,
+               a.updatetime
+        from t_article a, t_user u, t_board b
+        where
+            a.userid = u.id
+          and a.deletestate = 0
+          and a.boardid = b.id
+    </select>
+    
+    <select id="selectArticleAndBoardByUserId" resultMap="AllinfoResultMap" parameterType="java.lang.Long">
+        select b.id as b_id, b.name as b_name,
+               a.id,
+               a.boardid,
+               a.userid,
+               a.title,
+               a.visitcount,
+               a.replycount,
+               a.likecount,
+               a.state,
+               a.createtime,
+               a.updatetime
+        from t_article a,t_board b where a.boardid = b.id and a.userid = #{uid} and a.deletestate = 0;
+    </select>
+
+    <select id="selectBinArticle" resultMap="AllinfoResultMap">
+        select u.id as u_id,
+               u.avatarUrl as u_avatarUrl,
+               u.nickname as u_nickname,
+               a.id,
+               a.boardid,
+               a.userid,
+               a.title,
+               a.visitcount,
+               a.replycount,
+               a.likecount,
+               a.state,
+               a.createtime,
+               a.updatetime
+        from t_article a, t_user u
+        where a.userid = u.id and a.deletestate = 1
+        order by a.createtime desc;
+    </select>
+
+    <select id="selectBinArticleWithContent" resultMap="AllinfoResultMap">
+        select u.id as u_id,
+               u.avatarUrl as u_avatarUrl,
+               u.nickname as u_nickname,
+               a.id,
+               a.boardid,
+               a.userid,
+               a.title,
+               a.content,
+               a.visitcount,
+               a.replycount,
+               a.likecount,
+               a.state,
+               a.createtime,
+               a.updatetime
+        from t_article a, t_user u
+        where a.userid = u.id and a.deletestate = 1 and a.id =#{aid};
+    </select>
+
+<!--    删除表中的一条数据-->
+    <delete id="deleteArticle">
+        delete from t_article where id = #{aid} and deletestate = 1;
+    </delete>
+</mapper>
